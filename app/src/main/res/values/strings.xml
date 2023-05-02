@@ -1,3 +1,115 @@
 <resources>
-    <string name="app_name">MAD_MiniProject</string>
+    <string name="app_name">Service Development</string>
+    //Baby Sitter
+    <string name="bname">Aloka Athapaththu</string>
+    <string name="bage">32yrs</string>
+    <string name="bgender">Female</string>
+    <string name="bcontact">077456879</string>
+    <string name="bAvailability">Available</string>
+    <string name="bhourlyRate">Rs.300.00</string>
+    <string name="bdesc">2 year experience</string>
+
+
+    //Dog Walker
+    <string name="dname">Nilu Athapaththu</string>
+    <string name="dage">32yrs</string>
+    <string name="dgender">Female</string>
+    <string name="dcontact">077456879</string>
+    <string name="dAvailability">Available</string>
+    <string name="dhourlyRate">Rs.300.00</string>
+    <string name="ddesc">5 year experience</string>
+
+
+    //House Cleaner
+    <string name="hname">Namal Athapaththu</string>
+    <string name="hage">32yrs</string>
+    <string name="hgender">Female</string>
+    <string name="hcontact">077456879</string>
+    <string name="hAvailability">Available</string>
+    <string name="hhourlyRate">Rs.300.00</string>
+    <string name="hdesc">3 year experience</string>
+
+
+    <string name="hourlyRate">Hourly Rate</string>
+    <string name="services">Our Services</string>
+
+    <string name="bookingBtn">Confirm</string>
+
+
+    //intial Page
+    <string name="welcome">WELCOME TO SERVICE DEV..</string>
+    <string name="start">Get Started</string>
+    <string name="signin">Sign In</string>
+
+    //edit booking
+    <string name="editBooking">Edit My Booking</string>
+
+
+    //Add Booking
+    <string name="booking">BOOKING</string>
+    <string name="Bdate">Date of Booking</string>
+    <string name="Bhrs">Booking Hours</string>
+    <string name="Baddr">Address</string>
+    <string name="Bphn">Phone Number</string>
+    <string name="Bbookdesc">Description</string>
+    <string name="Btotal">Total Amount</string>
+
+    <string name="BphEdit">07XXXXXXXX</string>
+    <string name="BeditDate">3/17/2023</string>
+    <string name="BhrsEdit">8</string>
+    <string name="Baddrfill">111,Flower Road</string>
+    <string name="Bbookdescfill">Add description</string>
+    <string name="BgenerateTotal">Rs.XXXXX.XX</string>
+
+    <string name="cancelbtn">CANCEL</string>
+    <string name="Badd">ADD</string>
+
+    //confirm booking
+    <string name="confirmB">CONFIRM BOOKING</string>
+    <string name="Cservicedata">Service Details</string>
+    <string name="CbookingData">Booking Details</string>
+    <string name="Ctitle">Servise Title</string>
+    <string name="Cname">Service Provider Name</string>
+    <string name="editBtn">EDIT</string>
+    <string name="deletebtn">DELETE</string>
+    <string name="confirmBtn">CONFIRM</string>
+
+
+    //Detailed retrive
+    <string name="Dname">Name:</string>
+    <string name="DAge">Age:</string>
+    <string name="Dgender">Gender:</string>
+    <string name="Dcontact">Contact No.:</string>
+    <string name="Dava">Avalability:</string>
+    <string name="DHrate">Hourly Rate:</string>
+    <string name="Ddesc">Description:</string>
+    <string name="bookNow">BOOK NOW</string>
+    <string name="updatebtn">UPDATE</string>
+    <string name="feedback">FEEDBACK</string>
+    <string name="idea">Your Ideas</string>
+    <string name="fb">FaceBook</string>
+    <string name="google">Google</string>
+    <string name="welcome1">WELCOME BACK</string>
+    <string name="Uname">User Name : </string>
+    <string name="pw">Password :</string>
+    <string name="or">or login With</string>
+    <string name="reg">REGISTER</string>
+    <string name="name">Name</string>
+    <string name="mail">"Email "</string>
+    <string name="contact">Contact No.</string>
+    <string name="uname">User Name</string>
+    <string name="pw1">Password</string>
+    <string name="rpwd">"Re-Enter Password "</string>
+    <string name="signup">SIGN UP</string>
+    <string name="wishlist">WISH LIST</string>
+    <string name="hello">Hello</string>
+    <string name="mybook">My Booking</string>
+    <string name="myservice">My Services</string>
+    <string name="servicenoti">Service Notification</string>
+    <string name="wish">Wish List</string>
+    <string name="Feedb">Feedback</string>
+    <string name="pro">Profile</string>
+    <string name="descmain">You can easily book and get a service</string>
+
+
 </resources>
