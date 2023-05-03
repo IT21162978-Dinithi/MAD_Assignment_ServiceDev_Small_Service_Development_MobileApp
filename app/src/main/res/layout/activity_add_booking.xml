@@ -74,7 +74,7 @@
                         android:textStyle="bold" />
 
                     <EditText
-                        android:id="@+id/editTextTextPersonName"
+                        android:id="@+id/addBhours"
                         android:layout_width="170dp"
                         android:layout_height="50dp"
                         android:layout_weight="1"
@@ -102,7 +102,7 @@
                         android:textStyle="bold" />
 
                     <EditText
-                        android:id="@+id/editDate"
+                        android:id="@+id/addBDate"
                         android:layout_width="167dp"
                         android:layout_height="50dp"
                         android:layout_weight="1"
@@ -130,7 +130,7 @@
                         android:textStyle="bold" />
 
                     <EditText
-                        android:id="@+id/addrfill"
+                        android:id="@+id/addBaddr"
                         android:layout_width="170dp"
                         android:layout_height="50dp"
                         android:layout_weight="1"
@@ -158,7 +158,7 @@
                         android:textStyle="bold" />
 
                     <EditText
-                        android:id="@+id/editTextPhone"
+                        android:id="@+id/addBphone"
                         android:layout_width="wrap_content"
                         android:layout_height="50dp"
                         android:layout_weight="1"
@@ -186,7 +186,7 @@
                         android:textStyle="bold" />
 
                     <EditText
-                        android:id="@+id/bookdescfill"
+                        android:id="@+id/addBdesc"
                         android:layout_width="wrap_content"
                         android:layout_height="50dp"
                         android:layout_weight="1"
@@ -204,24 +204,14 @@
                     android:layout_marginTop="15dp">
 
                     <TextView
-                        android:id="@+id/total"
-                        android:layout_width="135dp"
+                        android:id="@+id/subtitle"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:padding="10dp"
-                        android:text="@string/Btotal"
+                        android:text="...Click Add Button ..."
                         android:textColor="#030903"
                         android:textSize="@dimen/Bdata"
                         android:textStyle="bold" />
-
-                    <EditText
-                        android:id="@+id/generateTotal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="50dp"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:hint="@string/BgenerateTotal"
-                        android:inputType="textPersonName"
-                        android:textSize="@dimen/Bdata" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -233,7 +223,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/btncancel1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="70dp"

@@ -108,7 +108,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName"
+                    android:id="@+id/addBhours"
                     android:layout_width="170dp"
                     android:layout_height="50dp"
                     android:layout_weight="1"
@@ -135,7 +135,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editDate"
+                    android:id="@+id/addBDate"
                     android:layout_width="167dp"
                     android:layout_height="50dp"
                     android:layout_weight="1"
@@ -162,7 +162,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/addrfill"
+                    android:id="@+id/addBaddr"
                     android:layout_width="170dp"
                     android:layout_height="50dp"
                     android:layout_weight="1"
@@ -189,7 +189,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editTextPhone"
+                    android:id="@+id/addBphone"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:layout_weight="1"
@@ -216,7 +216,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/bookdescfill"
+                    android:id="@+id/addBdesc"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:layout_weight="1"
