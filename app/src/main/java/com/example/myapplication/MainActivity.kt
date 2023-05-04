@@ -12,8 +12,8 @@ class MainActivity : AppCompatActivity() {
 
         var btngo = findViewById<Button>(R.id.btngo)
         btngo.setOnClickListener {
-            val intentD1 = Intent(this, addPaymentDetailsActivity::class.java)
-            startActivity(intentD1)
+            val intentP1 = Intent(this, addPaymentDetailsActivity::class.java)
+            startActivity(intentP1)
 
 
             }

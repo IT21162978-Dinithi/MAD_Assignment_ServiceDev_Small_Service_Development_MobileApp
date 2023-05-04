@@ -12,6 +12,7 @@
         android:orientation="vertical"
         tools:context=".addPaymentDetailsActivity">
 
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="241dp">
@@ -57,7 +58,6 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
-
 
         <ScrollView
             android:layout_width="match_parent"
@@ -141,7 +141,7 @@
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/editDate"
+                            android:id="@+id/crdnumber"
                             android:layout_width="167dp"
                             android:layout_height="50dp"
                             android:layout_weight="1"
@@ -169,7 +169,7 @@
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/addrfill"
+                            android:id="@+id/exmonth"
                             android:layout_width="170dp"
                             android:layout_height="50dp"
                             android:layout_weight="1"
@@ -197,7 +197,7 @@
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/editTextPhone"
+                            android:id="@+id/exyear"
                             android:layout_width="wrap_content"
                             android:layout_height="50dp"
                             android:layout_weight="1"
@@ -225,7 +225,7 @@
                             android:textStyle="bold" />
 
                         <EditText
-                            android:id="@+id/bookdescfill"
+                            android:id="@+id/cvn2"
                             android:layout_width="wrap_content"
                             android:layout_height="50dp"
                             android:layout_weight="1"
@@ -261,7 +261,7 @@
                         android:textSize="@dimen/btnSize" />
 
                     <Button
-                        android:id="@+id/bookingBtn"
+                        android:id="@+id/paybtn"
                         android:layout_width="106dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="50dp"
