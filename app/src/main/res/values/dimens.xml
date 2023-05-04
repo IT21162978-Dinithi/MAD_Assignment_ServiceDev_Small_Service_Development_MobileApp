@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><dimen name="pay">34sp</dimen>
+    <dimen name="pay_message">20sp</dimen>
+    <dimen name="btn_back">14sp</dimen>
+    <dimen name="btn_save">14sp</dimen>
+    <dimen name="profile_name">32sp</dimen>
+    <dimen name="hello">18sp</dimen>
+    <dimen name="pro_message">20sp</dimen>
+
+    <dimen name="Bdata">16sp</dimen>
+    <dimen name="btnSize">15sp</dimen>
+    <dimen name="titleSize">30sp</dimen>
+    <dimen name="titlePadding">5dp</dimen>
+</resources>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewPaymentDetailsActivity">
+
+
+    <LinearLayout
+        android:id="@+id/yearno"
+        android:layout_width="411dp"
+        android:layout_height="397dp"
+        android:background="@drawable/white_logpanel"
+        android:orientation="vertical"
+        android:paddingRight="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.651"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.329"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="295dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/radioButton9"
+                    android:layout_width="71dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:checked="true"
+                    android:onClick="checkButton" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="167dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/master1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="295dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/cardno"
+                android:layout_width="103dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/cardno"
+                android:textColor="#070707" />
+
+            <EditText
+                android:id="@+id/numbertext"
+                android:layout_width="173dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="50dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="5621 4715 XXXX XXXX"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="295dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/month"
+                android:layout_width="135dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/month"
+                android:textColor="#171717" />
+
+            <EditText
+                android:id="@+id/datetext"
+                android:layout_width="135dp"
+                android:layout_height="49dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="03"
+                android:inputType="date"
+                android:textColorHint="#515050"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="295dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/year_no"
+                android:layout_width="117dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:text="@string/yearno"
+                android:textColor="#090909" />
+
+            <EditText
+                android:id="@+id/yeartext"
+                android:layout_width="135dp"
+                android:layout_height="49dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="2024"
+                android:inputType="date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="295dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/cvn"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:text="@string/cvn"
+                android:textAllCaps="true"
+                android:textColor="#090808" />
+
+            <EditText
+                android:id="@+id/editTextNumber2"
+                android:layout_width="151dp"
+                android:layout_height="49dp"
+                android:ems="10"
+                android:hint="095"
+                android:inputType="number" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/payDetails"
+        android:layout_width="299dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="28dp"
+        android:background="#92c278"
+        android:backgroundTint="#92c278"
+        android:text="@string/payDetails"
+        android:textColor="#100F0F"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/yearno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="412dp"
+        android:layout_height="132dp"
+        android:background="@drawable/botom_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="401dp"
+            android:layout_height="134dp"
+            android:background="@drawable/botom_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="123dp"
+                android:layout_height="51dp"
+                android:background="@drawable/button_back"
+                android:backgroundTint="#4A1D2A"
+                android:text="@string/btn_delete"
+                android:textColor="#FDF8F8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_update"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="115dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/button_back"
+                android:backgroundTint="#6A9167"
+
+                android:text="@string/btn_update"
+                android:textColor="#FDF8F8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

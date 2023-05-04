@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_green"
+        android:orientation="vertical"
+        tools:context=".addPaymentDetailsActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="241dp">
+
+            <LinearLayout
+                android:layout_width="338dp"
+                android:layout_height="62dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/bar"
+                android:elevation="3dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+                <TextView
+                    android:id="@+id/pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight="1"
+
+                    android:text="@string/pay"
+                    android:textAlignment="center"
+                    android:textColor="@color/dark_green"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="167dp"
+                android:background="@drawable/top_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="#DFF6E8"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/white_logpanel"
+                    android:orientation="vertical"
+                    android:paddingRight="5dp"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:layout_width="299dp"
+                        android:layout_height="61dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp">
+
+                        <RadioGroup
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent">
+
+                            <RadioButton
+                                android:id="@+id/radioButton9"
+                                android:layout_width="40dp"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="15dp"
+                                android:onClick="checkButton" />
+                        </RadioGroup>
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="83dp"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/master1" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton10"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="15dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="109dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="20dp"
+                            app:srcCompat="@drawable/visa1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="333dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/date"
+                            android:layout_width="135dp"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:text="@string/cardno"
+                            android:textColor="#030903"
+                            android:textSize="@dimen/Bdata"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editDate"
+                            android:layout_width="167dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="5334 XXXX  XXXX XXXX"
+                            android:inputType="date"
+                            android:textSize="@dimen/Bdata" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="333dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/addr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:text="@string/month"
+                            android:textColor="#030903"
+                            android:textSize="@dimen/Bdata"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/addrfill"
+                            android:layout_width="170dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="05"
+                            android:inputType="textPersonName"
+                            android:textSize="@dimen/Bdata" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="333dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/phn"
+                            android:layout_width="135dp"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:text="@string/yearno"
+                            android:textColor="#030903"
+                            android:textSize="@dimen/Bdata"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editTextPhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="2023"
+                            android:inputType="phone"
+                            android:textSize="@dimen/Bdata" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="333dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp">
+
+                        <TextView
+                            android:id="@+id/bookdesc"
+                            android:layout_width="135dp"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:text="@string/cvn"
+                            android:textColor="#030903"
+                            android:textSize="@dimen/Bdata"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/bookdescfill"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="123"
+                            android:inputType="textPersonName"
+                            android:textSize="@dimen/Bdata" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="333dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="411dp"
+                    android:layout_height="81dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_back"
+                        android:text="@string/btn_cansel"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/btnSize" />
+
+                    <Button
+                        android:id="@+id/bookingBtn"
+                        android:layout_width="106dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="70dp"
+                        android:background="@drawable/button_back"
+                        android:backgroundTint="#470707"
+                        android:text="@string/btn_now"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/btnSize" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
