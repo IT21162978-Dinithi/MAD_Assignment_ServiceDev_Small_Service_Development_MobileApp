@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Bdata">16sp</dimen>
+    <dimen name="btnSize">15sp</dimen>
+    <dimen name="titleSize">30sp</dimen>
+    <dimen name="titlePadding">5dp</dimen>
+</resources>

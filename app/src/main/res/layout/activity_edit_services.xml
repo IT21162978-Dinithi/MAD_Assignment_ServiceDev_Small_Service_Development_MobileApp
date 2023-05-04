@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    android:orientation="vertical"
+    tools:context=".EditServices">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@drawable/top_background">
+
+        <TextView
+            android:id="@+id/booking"
+            android:layout_width="308dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="78dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginBottom="78dp"
+            android:background="@drawable/bar"
+            android:padding="@dimen/titlePadding"
+            android:text="@string/editservices"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/dark_green"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DFF6E8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/white_logpanel"
+                android:orientation="vertical"
+                android:paddingRight="5dp"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="333dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/bookhrs"
+                        android:layout_width="135dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:text="@string/Servicetitle"
+                        android:textAllCaps="false"
+                        android:textColor="#030903"
+                        android:textSize="@dimen/Bdata"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editTextTextPersonName"
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/sitterTitle"
+                        android:inputType="textPersonName"
+                        android:textSize="@dimen/Bdata" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="333dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/addr"
+                        android:layout_width="135dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:text="@string/Age"
+                        android:textColor="#030903"
+                        android:textSize="@dimen/Bdata"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/addrfill"
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/sitterage"
+                        android:inputType="textPersonName"
+                        android:textSize="@dimen/Bdata" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="333dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp" />
+
+                <LinearLayout
+                    android:layout_width="333dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/bookdesc"
+                        android:layout_width="135dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:text="@string/Address"
+                        android:textColor="#030903"
+                        android:textSize="@dimen/Bdata"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/bookdescfill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/sitteraddress"
+                        android:inputType="textPersonName"
+                        android:textSize="@dimen/Bdata" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="333dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/total"
+                        android:layout_width="135dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:text="@string/HourlyRate"
+                        android:textColor="#030903"
+                        android:textSize="@dimen/Bdata"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/generateTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/sitterrate"
+                        android:inputType="textPersonName"
+                        android:textSize="@dimen/Bdata" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="333dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/bookdesc"
+                        android:layout_width="135dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:text="@string/Availability"
+                        android:textColor="#030903"
+                        android:textSize="@dimen/Bdata"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/bookdescfill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/sitterAvaliabili"
+                        android:inputType="textPersonName"
+                        android:textSize="@dimen/Bdata" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="333dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/bookdesc"
+                        android:layout_width="135dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:text="@string/Description"
+                        android:textColor="#030903"
+                        android:textSize="@dimen/Bdata"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/bookdescfill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="@string/sitterdescription"
+                        android:inputType="textPersonName"
+                        android:textSize="@dimen/Bdata" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/add001"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_back"
+                    android:text="@string/Update"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/btnSize" />
+
+                <Button
+                    android:id="@+id/cancel001"
+                    android:layout_width="106dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="70dp"
+                    android:background="@drawable/button_back"
+                    android:backgroundTint="#470707"
+                    android:text="@string/Cancel"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/btnSize" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
