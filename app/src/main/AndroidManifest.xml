@@ -12,25 +12,31 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".viewPaymentDetailsActivity"
+            android:name=".activities.frechPaymentActivity"
             android:exported="false" />
         <activity
-            android:name=".calcServiceChargeActivity"
+            android:name=".activities.listPayment"
             android:exported="false" />
         <activity
-            android:name=".viewBookinglistActivity"
+            android:name=".activities.viewPaymentDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".edtServiceRequestActivity"
+            android:name=".activities.calcServiceChargeActivity"
             android:exported="false" />
         <activity
-            android:name=".paymentSuccessActivity"
+            android:name=".activities.viewBookinglistActivity"
             android:exported="false" />
         <activity
-            android:name=".addPaymentDetailsActivity"
+            android:name=".activities.edtServiceRequestActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.paymentSuccessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.addPaymentDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

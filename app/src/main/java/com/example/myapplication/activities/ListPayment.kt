@@ -1,11 +1,12 @@
-package com.example.myapplication
+package com.example.myapplication.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.myapplication.R
 
-class edtServiceRequestActivity : AppCompatActivity() {
+class listPayment : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_edt_service_request)
+        setContentView(R.layout.listpayment)
     }
 }

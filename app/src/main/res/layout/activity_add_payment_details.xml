@@ -10,7 +10,7 @@
         android:layout_height="match_parent"
         android:background="@color/light_green"
         android:orientation="vertical"
-        tools:context=".addPaymentDetailsActivity">
+        tools:context=".activities.addPaymentDetailsActivity">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -95,7 +95,7 @@
                             android:layout_height="match_parent">
 
                             <RadioButton
-                                android:id="@+id/radioButton9"
+                                android:id="@+id/radioButton11"
                                 android:layout_width="40dp"
                                 android:layout_height="50dp"
                                 android:layout_marginTop="15dp"
@@ -263,7 +263,7 @@
                     <Button
                         android:id="@+id/paybtn"
                         android:layout_width="106dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="42dp"
                         android:layout_marginLeft="50dp"
                         android:layout_marginTop="0dp"
                         android:layout_marginRight="70dp"

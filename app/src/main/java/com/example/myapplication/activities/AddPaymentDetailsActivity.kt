@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.RadioButton
 import android.widget.Toast
+import com.example.myapplication.R
+import com.example.myapplication.models.paymentModel
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -22,12 +24,12 @@ class addPaymentDetailsActivity : AppCompatActivity() {
     private lateinit var btn_cancel:Button
     private lateinit var paybtn:Button
 
-    private lateinit var dbref: DatabaseReference
+    private lateinit var dbRef: DatabaseReference
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_payment_details)
 
-        radioButton9 =findViewById(R.id.radioButton9)
+        radioButton9 =findViewById(R.id.radioButton11)
         radioButton10 =findViewById(R.id.radioButton10)
         crdnumber =findViewById(R.id.crdnumber)
         exmonth =findViewById(R.id.exmonth)
@@ -36,7 +38,7 @@ class addPaymentDetailsActivity : AppCompatActivity() {
         btn_cancel =findViewById(R.id.btn_cancel)
         paybtn =findViewById(R.id.paybtn)
 
-        dbref =FirebaseDatabase.getInstance().getReference( "PaymentDetails ")
+        dbRef =FirebaseDatabase.getInstance().getReference( "Payment")
 
         paybtn.setOnClickListener{
             savePaymentData()
@@ -48,11 +50,10 @@ class addPaymentDetailsActivity : AppCompatActivity() {
             val intentP2 = Intent(this, MainActivity::class.java)
             startActivity(intentP2)
         }
-        var bookingBtn = findViewById<Button>(R.id.paybtn)
-        bookingBtn.setOnClickListener {
-            val intentP4 = Intent(this, paymentSuccessActivity::class.java)
-            startActivity(intentP4)
-        }
+
+
+
+
     }
     private fun savePaymentData() {
         //getting values
@@ -77,11 +78,11 @@ class addPaymentDetailsActivity : AppCompatActivity() {
         }
 
         //generate unique ID s
-        val payId = dbref.push().key!!
+        val payId = dbRef.push().key!!
 
-        val PaymentDetails =paymentModel(payId,crdNumber, month, year, cvn)
+        val payment = paymentModel(payId,crdNumber, month, year, cvn)
 
-            dbref.child(payId).setValue(PaymentDetails)
+         dbRef.child(payId).setValue(payment)
                 .addOnCompleteListener{
                     Toast.makeText( this, "Data inserted successfully", Toast.LENGTH_LONG).show()
 
