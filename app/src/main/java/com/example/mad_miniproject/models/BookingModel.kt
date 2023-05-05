@@ -1,4 +1,4 @@
-package com.example.mad_miniproject
+package com.example.mad_miniproject.models
 
 data class BookingModel (
     var bookingId: String? = null,
@@ -6,7 +6,7 @@ data class BookingModel (
     var bookingDate: String? = null,
     var bookingAddr: String? = null,
     var bookingPhone: String? = null,
-    var bookingDesc: String? = null
+    var bookingSName: String? = null
 
 
 )

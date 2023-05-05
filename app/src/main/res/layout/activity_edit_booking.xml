@@ -5,85 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light_green"
-    tools:context=".editBookingActivity">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout3"
-        android:layout_width="match_parent"
-        android:layout_height="166dp"
-        android:background="@drawable/botom_background"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="115dp"
-            android:layout_height="49dp"
-            android:layout_marginStart="52dp"
-            android:layout_marginTop="51dp"
-            android:layout_marginEnd="42dp"
-            android:layout_marginBottom="66dp"
-            android:background="@drawable/button_back"
-            android:backgroundTint="@color/dark_blue"
-            android:text="@string/cancelbtn"
-            android:textColor="@color/white"
-            android:textSize="@dimen/btnSize"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/button8"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="123dp"
-            android:layout_height="51dp"
-            android:layout_marginStart="42dp"
-            android:layout_marginTop="51dp"
-            android:layout_marginEnd="79dp"
-            android:layout_marginBottom="64dp"
-            android:background="@drawable/button_back"
-            android:backgroundTint="@color/maroon1"
-            android:text="@string/updatebtn"
-            android:textColor="@color/white"
-            android:textSize="@dimen/btnSize"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button7"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="336dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="467dp"
-        android:background="@drawable/bar"
-        android:padding="@dimen/titlePadding"
-        android:text="@string/editBooking"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textColor="#030903"
-        android:textSize="@dimen/titleSize"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/scrollView3" />
+    tools:context=".activities.editBookingActivity">
 
     <ScrollView
         android:id="@+id/scrollView3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="55dp">
+        tools:layout_editor_absoluteY="-41dp">
 
         <LinearLayout
             android:id="@+id/linearLayout4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="150dp"
             android:background="@drawable/white_logpanel"
             android:orientation="vertical"
             android:paddingRight="5dp"
@@ -108,7 +42,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/addBhours"
+                    android:id="@+id/etBhours"
                     android:layout_width="170dp"
                     android:layout_height="50dp"
                     android:layout_weight="1"
@@ -135,7 +69,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/addBDate"
+                    android:id="@+id/etBDate"
                     android:layout_width="167dp"
                     android:layout_height="50dp"
                     android:layout_weight="1"
@@ -162,7 +96,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/addBaddr"
+                    android:id="@+id/etBaddr"
                     android:layout_width="170dp"
                     android:layout_height="50dp"
                     android:layout_weight="1"
@@ -189,7 +123,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/addBphone"
+                    android:id="@+id/etBphone"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:layout_weight="1"
@@ -199,38 +133,20 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="333dp"
+            <Button
+                android:id="@+id/btnUpdateData"
+                android:layout_width="293dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="15dp">
-
-                <TextView
-                    android:id="@+id/bookdesc"
-                    android:layout_width="135dp"
-                    android:layout_height="match_parent"
-                    android:padding="10dp"
-                    android:text="@string/Bbookdesc"
-                    android:textColor="#030903"
-                    android:textSize="@dimen/Bdata"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/addBdesc"
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:layout_weight="1"
-                    android:ems="10"
-                    android:hint="@string/Bbookdescfill"
-                    android:inputType="textPersonName" />
-
-            </LinearLayout>
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_back"
+                android:text="@string/updatebtn"
+                android:textColor="#FEFEFE" />
 
         </LinearLayout>
     </ScrollView>
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
