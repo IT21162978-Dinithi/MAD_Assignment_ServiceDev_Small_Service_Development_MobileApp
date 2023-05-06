@@ -1,5 +1,6 @@
 package com.example.myapplication.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -35,6 +36,12 @@ class viewPaymentDetailsActivity : AppCompatActivity() {
                 intent.getStringExtra("payId").toString(),
                 intent.getStringExtra("crdNumber").toString()
             ) }
+
+        btn_delete.setOnClickListener{
+            deleteRecord(
+                intent.getStringExtra("payId").toString(),
+            )
+        }
     }
 
     private fun initView() {
@@ -103,12 +110,27 @@ class viewPaymentDetailsActivity : AppCompatActivity() {
 
             alertDialog.dismiss()
         }
-    }
 
+    }
+    private fun deleteRecord(
+    id: String
+    ){
+        val dbRef = FirebaseDatabase.getInstance().getReference("Payment").child(id)
+        val mTask = dbRef.removeValue()
+        mTask.addOnSuccessListener {
+            Toast.makeText(this, "Payment data deleted", Toast.LENGTH_LONG).show()
+
+            val intent = Intent(this, frechPaymentActivity::class.java)
+            finish()
+            startActivity(intent)
+        }.addOnFailureListener{ error ->
+            Toast.makeText(this, "Deleting Err ${error.message}", Toast.LENGTH_LONG).show()
+        }
+}
     private fun updatePayData(
         id: String,
         card: String,
-        month: String,
+        month: String, 
         year: String,
         cvn: String
     ) {

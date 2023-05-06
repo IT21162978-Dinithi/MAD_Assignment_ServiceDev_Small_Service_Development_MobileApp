@@ -23,7 +23,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(intentP6)
 
         }
-    }
+
+
+        }
 }
 
 
