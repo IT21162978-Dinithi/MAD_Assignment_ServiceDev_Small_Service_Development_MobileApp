@@ -12,13 +12,24 @@
         android:theme="@style/Theme.MAD_MiniProject"
         tools:targetApi="31">
         <activity
-            android:name=".activities.signUpActivity"
+            android:name=".activities.retriveBookingdata"
             android:exported="false" />
 
         <activity
+            android:name=".activities.allServicesRetrive"
+            android:exported="false" />
+        <activity
+            android:name=".activities.addServedServicesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.registerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.signUpActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.signInActivity"
             android:exported="false" />
-
         <activity
             android:name=".activities.frechBookingActivity"
             android:exported="false" />

@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import com.example.mad_miniproject.models.BookingModel
 import com.example.mad_miniproject.R
@@ -14,11 +15,13 @@ import com.google.firebase.database.FirebaseDatabase
 
 class addBookingActivity : AppCompatActivity() {
 
+
     private lateinit var addBhours: EditText
     private lateinit var addBDate: EditText
     private lateinit var addBaddr: EditText
     private lateinit var addBphone: EditText
     private lateinit var addBname: EditText
+    private lateinit var addBmail: EditText
     private lateinit var bookingBtn: Button
 
     private lateinit var dbRef: DatabaseReference
@@ -30,11 +33,14 @@ class addBookingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_booking)
 
+
+
         addBhours = findViewById(R.id.etBhours)
         addBDate = findViewById(R.id.etBDate)
         addBaddr = findViewById(R.id.etBaddr)
         addBphone = findViewById(R.id.etBphone)
         addBname = findViewById(R.id.addBname)
+
         bookingBtn = findViewById(R.id.bookingBtn)
 
         dbRef = FirebaseDatabase.getInstance().getReference("Booking")
@@ -91,9 +97,14 @@ class addBookingActivity : AppCompatActivity() {
                 addBphone.text.clear()
                 addBname.text.clear()
 
+
             }.addOnFailureListener { err ->
                 Toast.makeText(this, "Error ${err.message}", Toast.LENGTH_LONG).show()
             }
 
     }
+
+
+
+
 }

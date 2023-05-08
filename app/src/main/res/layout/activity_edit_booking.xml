@@ -25,7 +25,7 @@
 
 
             <LinearLayout
-                android:layout_width="333dp"
+                android:layout_width="270dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="15dp">
@@ -53,7 +53,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="333dp"
+                android:layout_width="270dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="15dp">
@@ -80,7 +80,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="333dp"
+                android:layout_width="270dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="15dp">
@@ -107,7 +107,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="333dp"
+                android:layout_width="270dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="15dp">
@@ -135,7 +135,7 @@
 
             <Button
                 android:id="@+id/btnUpdateData"
-                android:layout_width="293dp"
+                android:layout_width="205dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="10dp"

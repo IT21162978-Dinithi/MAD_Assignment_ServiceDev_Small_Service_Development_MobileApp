@@ -15,6 +15,8 @@ import com.google.firebase.database.FirebaseDatabase
 
 class BookingDetailedActivity : AppCompatActivity() {
 
+
+
     private lateinit var rBId: TextView
     private lateinit var rBhours: TextView
     private lateinit var rBDate: TextView
@@ -50,6 +52,10 @@ class BookingDetailedActivity : AppCompatActivity() {
 
 
     private fun initView(){
+
+
+
+
         rBId = findViewById(R.id.rBId)
         rBhours = findViewById(R.id.rBhours)
         rBDate = findViewById(R.id.rBDate)
@@ -64,6 +70,9 @@ class BookingDetailedActivity : AppCompatActivity() {
 
     //display value function
     private fun setValuesToViews() {
+
+
+
         rBId.text = intent.getStringExtra("bookingId")
         rBhours.text = intent.getStringExtra("bookingHours")
         rBDate.text = intent.getStringExtra("bookingDate")

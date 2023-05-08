@@ -19,6 +19,13 @@ class dashboardActivity : AppCompatActivity() {
 
         }
 
+        var serviceLy=findViewById<androidx.constraintlayout.widget.ConstraintLayout>(R.id.serviceLy)
+        serviceLy.setOnClickListener {
+            val intentD8= Intent (this, allServicesRetrive::class.java)
+            startActivity(intentD8)
+
+        }
+
 
     }
 }

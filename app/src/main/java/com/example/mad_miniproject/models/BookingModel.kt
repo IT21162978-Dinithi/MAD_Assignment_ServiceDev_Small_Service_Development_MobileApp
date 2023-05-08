@@ -6,7 +6,7 @@ data class BookingModel (
     var bookingDate: String? = null,
     var bookingAddr: String? = null,
     var bookingPhone: String? = null,
-    var bookingSName: String? = null
+    var bookingSName: String? = null,
 
 
 )
