@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ree"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    tools:context=".activities.FeedbackDetail"
+    tools:ignore="DuplicateIds">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="336dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bar"
+        android:text="My Feedback"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#030903"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView3" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/white_logpanel"
+            android:orientation="vertical"
+            android:paddingRight="5dp"
+            tools:ignore="MissingConstraints">
+
+
+            <LinearLayout
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/bookhrs"
+                    android:layout_width="135dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:text="Service Title"
+                    android:textAllCaps="false"
+                    android:textColor="#030903"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/reTitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="135dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:text="Provider Name"
+                    android:textColor="#030903"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/reSname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/addr"
+                    android:layout_width="135dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:text="Feedback"
+                    android:textColor="#030903"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/refee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/phn"
+                    android:layout_width="135dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:text="Idea about App"
+                    android:textColor="#030903"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/reidea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/dark_green"
+                android:text="UPDATE"
+                android:textColor="#FEFEFE" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/maroon1"
+                android:text="DELETE"
+                android:textColor="#FEFEFE" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
