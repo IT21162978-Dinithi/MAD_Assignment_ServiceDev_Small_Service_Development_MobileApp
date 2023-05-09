@@ -47,7 +47,7 @@ class addPaymentDetailsActivity : AppCompatActivity() {
 
         var btn_cancel = findViewById<Button>(R.id.btn_cancel)
         btn_cancel.setOnClickListener {
-            val intentP2 = Intent(this, MainActivity::class.java)
+            val intentP2 = Intent(this, calcServiceChargeActivity::class.java)
             startActivity(intentP2)
         }
 

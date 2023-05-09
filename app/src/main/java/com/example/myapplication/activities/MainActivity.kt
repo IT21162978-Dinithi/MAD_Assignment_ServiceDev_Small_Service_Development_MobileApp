@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         var btngo = findViewById<Button>(R.id.btngo)
         btngo.setOnClickListener {
-            val intentP1 = Intent(this, addPaymentDetailsActivity::class.java)
+            val intentP1 = Intent(this, calcServiceChargeActivity::class.java)
             startActivity(intentP1)
 
         }
@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intentP6)
 
         }
-
 
         }
 }

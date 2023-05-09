@@ -94,33 +94,7 @@
                         android:paddingRight="5dp"
                         tools:ignore="MissingConstraints">
 
-                        <LinearLayout
-                            android:layout_width="295dp"
-                            android:layout_height="41dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginBottom="20dp">
 
-                            <TextView
-                                android:id="@+id/amount"
-                                android:layout_width="135dp"
-                                android:layout_height="match_parent"
-                                android:layout_marginTop="15dp"
-                                android:text="@string/Amount"
-                                android:textColor="#0B0A0A"
-                                android:textSize="14sp" />
-
-                            <EditText
-                                android:id="@+id/paytext"
-                                android:layout_width="wrap_content"
-                                android:layout_height="48dp"
-                                android:layout_weight="1"
-                                android:ems="10"
-                                android:hint="RS:1320.00"
-                                android:inputType="numberDecimal"
-                                android:textColorHint="#0B0A0A" />
-
-                        </LinearLayout>
 
                         <LinearLayout
                             android:layout_width="295dp"
@@ -149,33 +123,43 @@
 
                         </LinearLayout>
 
+                        <Button
+                            android:id="@+id/calc"
+                            android:layout_width="305dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:backgroundTint="@color/back"
+                            android:text=" Calculate Total "
+                            tools:layout_editor_absoluteX="289dp"
+                            tools:layout_editor_absoluteY="70dp" />
+
                         <LinearLayout
                             android:layout_width="295dp"
                             android:layout_height="41dp"
                             android:layout_marginLeft="10dp"
-                            android:layout_marginTop="15dp">
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp">
 
                             <TextView
-                                android:id="@+id/month"
+                                android:id="@+id/amount"
                                 android:layout_width="135dp"
                                 android:layout_height="match_parent"
                                 android:layout_marginTop="15dp"
-                                android:text="@string/date"
-                                android:textColor="#171717" />
+                                android:text="@string/Amount"
+                                android:textColor="#0B0A0A"
+                                android:textSize="14sp" />
+                            <TextView
+                                android:id="@+id/paytext"
+                                android:layout_width="135dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="15dp"
+                                android:text=""
+                                android:textColor="#0B0A0A"
+                                android:textSize="14sp" />
 
-                            <EditText
-                                android:id="@+id/datetext"
-                                android:layout_width="wrap_content"
-                                android:layout_height="48dp"
-                                android:layout_weight="1"
-                                android:ems="10"
-                                android:hint="28/03/23"
-                                android:inputType="date"
-                                android:textColorHint="#1B1919"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
 
                         </LinearLayout>
+
 
                     </LinearLayout>
 
@@ -225,6 +209,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.645" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
