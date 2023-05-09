@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import com.example.mad_miniproject.R
 import com.example.mad_miniproject.models.UserModel
@@ -32,6 +33,13 @@ class registerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
+
+        var textSignIn=findViewById<TextView>(R.id.textSignIn)
+        textSignIn.setOnClickListener {
+            val intent= Intent (this, signInActivity::class.java)
+            startActivity(intent)
+
+        }
 
         firebaseAuth = FirebaseAuth.getInstance()
 
