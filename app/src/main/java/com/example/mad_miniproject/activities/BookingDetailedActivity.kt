@@ -53,7 +53,7 @@ class BookingDetailedActivity : AppCompatActivity() {
         //payment
         var paybtn=findViewById<Button>(R.id.btnpay001)
         paybtn.setOnClickListener {
-            val intent= Intent (this, retriveBookingdata::class.java)
+            val intent= Intent (this, calcServiceChargeActivity::class.java)
             startActivity(intent)
 
         }

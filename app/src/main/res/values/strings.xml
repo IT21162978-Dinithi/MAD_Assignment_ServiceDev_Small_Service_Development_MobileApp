@@ -125,4 +125,48 @@
     <string name="login_failed">"Login failed"</string>
 
 
+    //
+
+    <string name="text1">Payment Successful</string>
+    <string name="btn_1">Continue</string>
+    <string name="Amount">Total Amount:</string>
+    <string name="hours">Hours:</string>
+    <string name="date">Date:</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_add">Add to wishlist</string>
+    <string name="btn_pay">Pay Now</string>
+    <string name="pay">PAYMENT</string>
+    <string name="cardno">Card Number</string>
+    <string name="m" />
+    <string name="month">Expiration month</string>
+    <string name="yearno">Expiration year</string>
+    <string name="cvn">"cvn "</string>
+    <string name="btn_cansel">Cancel</string>
+    <string name="btn_now">Pay</string>
+    <string name="success">Payment Successful</string>
+    <string name="message">Thank you for your payment.</string>
+
+
+    <string name="pro_name">Laura Steveson</string>
+    <string name="history">My ooking List</string>
+    <string name="request">Service Notifications</string>
+    <string name="sev_name">Amily watson</string>
+    <string name="msg">You have received 2 new requests.</string>
+    <string name="btn_accept">Accept</string>
+    <string name="btn_reject">Reject</string>
+    <string name="btn_save">Want to save bank details.</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_delete">Delete</string>
+    <string name="payDetails">Payment Details</string>
+    <string name="btn_acc">Accept</string>
+    <string name="new_msg">Amily wotson accepted your request.</string>
+    <string name="btn_ready">Accepted</string>
+    <string name="btn_pending">Pending</string>
+    <string name="btn_call">Call</string>
+    <string name="btn_all">Delete All</string>
+    <string name="text_pay">Payment</string>
+    <string name="service">Service Charge</string>
+
+
+
 </resources>

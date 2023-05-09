@@ -33,6 +33,13 @@ class dashboardActivity : AppCompatActivity() {
 
         }
 
+        var cardLy=findViewById<androidx.constraintlayout.widget.ConstraintLayout>(R.id.cardLy)
+        cardLy.setOnClickListener {
+            val intent1= Intent (this, frechPaymentActivity::class.java)
+            startActivity(intent1)
+
+        }
+
 
     }
 }
