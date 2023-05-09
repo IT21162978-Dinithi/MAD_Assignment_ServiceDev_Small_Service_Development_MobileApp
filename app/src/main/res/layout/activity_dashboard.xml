@@ -66,7 +66,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="28dp"
-                        android:text="Dewru Thehas"
+                        android:text="Welcome All"
                         android:textColor="#169F24"
                         android:textSize="@dimen/titleSize"
                         android:textStyle="bold"
@@ -197,6 +197,7 @@
                 android:orientation="horizontal">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/myServiceLy"
                     android:layout_width="197dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/white_logpanel">

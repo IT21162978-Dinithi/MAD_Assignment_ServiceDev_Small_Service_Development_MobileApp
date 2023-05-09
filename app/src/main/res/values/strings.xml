@@ -168,5 +168,56 @@
     <string name="service">Service Charge</string>
 
 
+    //
+    <string name="AddService">Add Your Service</string>
+    <string name="Hello">Hello</string>
+
+    <string name="Servicetitle">Service Title</string>
+    <string name="NIC">NIC</string>
+    <string name="Age">Age</string>
+    <string name="Gender">Gender</string>
+    <string name="Address">Address</string>
+    <string name="HourlyRate">Hourly Rate</string>
+    <string name="Availability">Availability</string>
+    <string name="Description">Description</string>
+    <string name="Add">Add</string>
+    <string name="Cancel">Cancel</string>
+
+
+    //Baby Sitter
+    <string name="sitterTitle">Baby Sitter</string>
+    <string name="sitterNic">769976568V</string>
+    <string name="sitterage">49</string>
+    <string name="sitterGenderr">dropDownMenu</string>
+    <string-array name="genderr">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="sitterAvaliabili">dropDownMenu</string>
+    <string-array name="Availabili">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string name="AddServices">dropDownMenu</string>
+    <string-array name="Title">
+        <item>Baby Sitter</item>
+        <item>Dog walker</item>
+        <item>House Cleaner</item>
+    </string-array>
+
+    <string name="sitteraddress">No99, Malabe, Colombo</string>
+    <string name="sitterrate">Rs.350.00</string>
+    <string name="sitterdescription">2 year experience</string>
+
+    <string name="Myservices">My Services</string>
+    <string name="Edit">Edit</string>
+    <string name="Delete">Delete</string>
+    <string name="babysitter">Baby Sitter</string>
+    <string name="dogwalker">Dog Walker</string>
+    <string name="Housecleaner">House Cleaner</string>
+
+    <string name="editservices">Edit My Services</string>
+    <string name="Update">Update</string>
+
 
 </resources>

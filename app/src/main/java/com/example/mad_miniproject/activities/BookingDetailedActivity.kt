@@ -73,7 +73,7 @@ class BookingDetailedActivity : AppCompatActivity() {
         addBname = findViewById(R.id.addBname)
 
         btnUpdate = findViewById(R.id.btnUpdate)
-        btnDelete = findViewById(R.id.btnDelete)
+        btnDelete = findViewById(R.id.btncan1)
 
     }
 
