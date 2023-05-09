@@ -1,8 +1,10 @@
 package com.example.mad_miniproject.activities
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -24,9 +26,18 @@ class frechBookingActivity : AppCompatActivity() {
 
 
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_frech_booking)
+
+        var backarrow=findViewById<ImageButton>(R.id.backarrow0)
+        backarrow.setOnClickListener {
+            val intent= Intent (this, dashboardActivity::class.java)
+            startActivity(intent)
+
+        }
+
 
 
         firebaseAuth = FirebaseAuth.getInstance()
@@ -34,7 +45,7 @@ class frechBookingActivity : AppCompatActivity() {
         //userID = firebaseAuth.getCurrentUser()!!.uid
 
 
-        bookingRecyclerView = findViewById(R.id.rvBooking)
+        bookingRecyclerView = findViewById(R.id.rvfeed)
         bookingRecyclerView.layoutManager=LinearLayoutManager(this)
         bookingRecyclerView.setHasFixedSize(true)
 
@@ -50,6 +61,8 @@ class frechBookingActivity : AppCompatActivity() {
         bookingList = arrayListOf<BookingModel>()
 
         getBookingData()
+
+
 
     }
 
@@ -89,13 +102,20 @@ class frechBookingActivity : AppCompatActivity() {
 
                     })
 
+
+                    //
+
+
+
                     bookingRecyclerView.visibility = View.VISIBLE
                 }
             }
 
+
             override fun onCancelled(error: DatabaseError) {
                 TODO("Not yet implemented")
             }
+
 
         })
     }

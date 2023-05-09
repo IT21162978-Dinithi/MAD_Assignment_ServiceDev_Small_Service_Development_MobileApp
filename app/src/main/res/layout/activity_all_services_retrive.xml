@@ -8,6 +8,7 @@
     tools:context=".activities.allServicesRetrive">
 
     <ScrollView
+        android:id="@+id/scrollView4"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -21,6 +22,13 @@
                 android:layout_height="413dp"
                 android:background="@drawable/bg1"
                 android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/backarrow3"
+                    android:layout_width="54dp"
+                    android:layout_height="51dp"
+                    android:background="@drawable/left_background"
+                    app:srcCompat="@drawable/baseline_chevron_left_24" />
 
                 <TextView
                     android:id="@+id/textView22"
@@ -39,6 +47,7 @@
                     android:textColor="@color/dark_green"
                     android:textSize="24sp"
                     android:textStyle="bold" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -66,19 +75,22 @@
             </LinearLayout>
 
             <SearchView
-                android:id="@+id/search1"
-                android:layout_width="357dp"
-                android:layout_height="34dp"
+                android:id="@+id/search"
+                android:layout_width="373dp"
+                android:layout_height="39dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/topborder2" />
+                android:background="@drawable/topborder2"
+                android:iconifiedByDefault="false"
+                android:queryHint="Search Here...."
+                />
 
             <androidx.recyclerview.widget.RecyclerView
 
 
-                android:id="@+id/rvBooking"
+                android:id="@+id/rvfeed"
                 android:layout_width="match_parent"
                 android:layout_height="656dp"
                 android:divider="@android:color/transparent"

@@ -2,16 +2,24 @@ package com.example.mad_miniproject.activities
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageButton
+import android.widget.SearchView
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mad_miniproject.R
 import com.example.mad_miniproject.adapters.SevRetriveAdapter
 import com.example.mad_miniproject.models.AllServicesModel
 import com.google.firebase.database.*
+import java.util.*
 
 class allServicesRetrive : AppCompatActivity() {
+
+    private lateinit var searchView: SearchView
+    private lateinit var adapter: SevRetriveAdapter
+
 
     private lateinit var allServicesRecyclerView: RecyclerView
     private lateinit var servicesList : ArrayList<AllServicesModel>
@@ -22,17 +30,50 @@ class allServicesRetrive : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_all_services_retrive)
 
-        allServicesRecyclerView = findViewById(R.id.rvBooking)
+        var backarrow=findViewById<ImageButton>(R.id.backarrow3)
+        backarrow.setOnClickListener {
+            val intent= Intent (this, dashboardActivity::class.java)
+            startActivity(intent)
+
+        }
+
+
+
+        allServicesRecyclerView = findViewById(R.id.rvfeed)
         allServicesRecyclerView.layoutManager= LinearLayoutManager(this)
         allServicesRecyclerView.setHasFixedSize(true)
+
 
 
         servicesList = arrayListOf<AllServicesModel>()
 
         getsevData()
 
+        //search view
 
-    }
+        adapter = SevRetriveAdapter(servicesList)
+        //
+        allServicesRecyclerView.adapter = adapter
+
+        searchView = findViewById(R.id.search)
+
+        searchView.setOnQueryTextListener(object:SearchView.OnQueryTextListener{
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                return false
+            }
+
+            override fun onQueryTextChange(newText : String): Boolean {
+                filterList(newText)
+                return true
+            }
+
+
+        })
+
+   }
+
+
+
 
     private fun getsevData(){
 
@@ -79,5 +120,43 @@ class allServicesRetrive : AppCompatActivity() {
 
 
         })
+
     }
+
+    //search function
+    private fun filterList(query: String?){
+
+        if (query!=null) {
+            val filteredList = ArrayList<AllServicesModel>()
+            for (seva in servicesList) {
+                if (seva.addservices?.lowercase(Locale.ROOT)?.contains(query) == true) {
+                    filteredList.add(seva)
+
+                }
+            }
+
+
+
+            if (filteredList.isEmpty()) {
+                Toast.makeText(this, "No Data Found", Toast.LENGTH_SHORT).show()
+            } else {
+
+                //allServicesRecyclerView.adapter =  SevRetriveAdapter(filteredList)
+                adapter.setFilteredList(filteredList)
+            }
+        }
+
+    }
+
+//    fun filterList(text: String) {
+//        val filteredList = java.util.ArrayList<AllServicesModel>()
+//        for (seva in servicesList) {
+//            if (seva.addservices?.lowercase()
+//                    ?.contains(text.lowercase(Locale.getDefault())) == true
+//            ) {
+//                filteredList.add(seva)
+//            }
+//        }
+//        adapter.setFilteredList(filteredList)
+//    }
 }

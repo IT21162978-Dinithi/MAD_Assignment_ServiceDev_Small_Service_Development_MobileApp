@@ -26,6 +26,7 @@ class BookingDetailedActivity : AppCompatActivity() {
     private lateinit var btnUpdate: Button
     private lateinit var btnDelete: Button
 
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,6 +48,14 @@ class BookingDetailedActivity : AppCompatActivity() {
             deleteRecord(
                 intent.getStringExtra("bookingId").toString()
             )
+        }
+
+        //payment
+        var paybtn=findViewById<Button>(R.id.btnpay001)
+        paybtn.setOnClickListener {
+            val intent= Intent (this, retriveBookingdata::class.java)
+            startActivity(intent)
+
         }
     }
 
@@ -143,7 +152,7 @@ class BookingDetailedActivity : AppCompatActivity() {
 
     ){
         val dbRef = FirebaseDatabase.getInstance().getReference("Booking").child(id)
-        val bookingInfo = BookingModel(id, hours, date, address ,phone , name)
+        val bookingInfo = BookingModel(id,hours, date, address ,phone , name)
         dbRef.setValue(bookingInfo)
     }
 

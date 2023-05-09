@@ -22,7 +22,7 @@ class signInActivity : AppCompatActivity() {
 
         firebaseAuth = FirebaseAuth.getInstance()
         binding.textSignUp.setOnClickListener {
-            val intent = Intent(this, signUpActivity::class.java)
+            val intent = Intent(this, registerActivity::class.java)
             startActivity(intent)
         }
 

@@ -26,6 +26,13 @@ class dashboardActivity : AppCompatActivity() {
 
         }
 
+        var feedbackLy=findViewById<androidx.constraintlayout.widget.ConstraintLayout>(R.id.feedbackLy)
+        feedbackLy.setOnClickListener {
+            val intent= Intent (this, FeedbackDisplay::class.java)
+            startActivity(intent)
+
+        }
+
 
     }
 }

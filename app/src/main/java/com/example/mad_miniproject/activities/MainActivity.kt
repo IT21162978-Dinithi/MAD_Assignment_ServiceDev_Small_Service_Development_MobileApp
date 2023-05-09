@@ -9,38 +9,11 @@ import com.example.mad_miniproject.R
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var recyclerbtn : Button
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        recyclerbtn = findViewById(R.id.dash)
-
-        recyclerbtn.setOnClickListener {
-
-            var i = Intent(this,allServicesRetrive::class.java)
-            startActivity(i)
-            finish()
-
-
-        }
-
-        var btngo=findViewById<Button>(R.id.btngo)
-        btngo.setOnClickListener {
-            val intentD1= Intent (this, addBookingActivity::class.java)
-            startActivity(intentD1)
-
-        }
-
-//        var dash=findViewById<Button>(R.id.dash)
-//        dash.setOnClickListener {
-//            val intentD6= Intent (this, allServicesRetrive::class.java)
-//            startActivity(intentD6)
-//
-//        }
-
-
 
 
         var startbtn=findViewById<Button>(R.id.startbtn)

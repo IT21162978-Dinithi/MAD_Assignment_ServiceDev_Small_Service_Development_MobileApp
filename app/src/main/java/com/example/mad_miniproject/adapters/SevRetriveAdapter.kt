@@ -1,5 +1,6 @@
 package com.example.mad_miniproject.adapters
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.mad_miniproject.R
 import com.example.mad_miniproject.models.AllServicesModel
 
-class SevRetriveAdapter(private val sevList: ArrayList<AllServicesModel>) : RecyclerView.Adapter<SevRetriveAdapter.MyViewHolder>() {
+class SevRetriveAdapter(private var sevList: ArrayList<AllServicesModel>) : RecyclerView.Adapter<SevRetriveAdapter.MyViewHolder>() {
 
 
     private lateinit var mListener: onItemClickListener
@@ -16,6 +17,8 @@ class SevRetriveAdapter(private val sevList: ArrayList<AllServicesModel>) : Recy
     interface onItemClickListener{
         fun onItemClick(position: Int)
     }
+
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
 
@@ -44,6 +47,8 @@ class SevRetriveAdapter(private val sevList: ArrayList<AllServicesModel>) : Recy
         mListener = clickListener
     }
 
+
+
     class MyViewHolder(itemView: View, clickListener:onItemClickListener): RecyclerView.ViewHolder(itemView){
 
         val Name : TextView = itemView.findViewById(R.id.seName)
@@ -60,6 +65,13 @@ class SevRetriveAdapter(private val sevList: ArrayList<AllServicesModel>) : Recy
         }
 
 
+    }
+
+    //search
+    @SuppressLint("NotifyDataSetChanged")
+    fun setFilteredList(filteredList: List<AllServicesModel>){
+        this.sevList = filteredList as ArrayList<AllServicesModel>
+        notifyDataSetChanged()
     }
 
 }

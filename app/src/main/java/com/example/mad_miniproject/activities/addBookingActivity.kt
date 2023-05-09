@@ -51,7 +51,7 @@ class addBookingActivity : AppCompatActivity() {
 
         var btncancel1=findViewById<Button>(R.id.btncancel1)
         btncancel1.setOnClickListener {
-            val intentD2= Intent (this, MainActivity::class.java)
+            val intentD2= Intent (this, allServicesRetrive::class.java)
             startActivity(intentD2)
 
         }
