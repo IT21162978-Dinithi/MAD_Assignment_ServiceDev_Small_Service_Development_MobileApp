@@ -18,8 +18,12 @@ customer request the service, the service provider informs about it through our 
 system. 
 This app is open for everyone and anyone can use this app easily.
 
+
+
 Contributers
-Group Leader - Athukorala W.A.A.D.D.T. (https://github.com/)
-Member2 - Rathnayake R.M.P.M. (https://github.com/)
-Member3 - Karunanayake K.M.S.S. (https://github.com/)
-Member4 - Rathnasinghe R.H.S (https://github.com/)
+<ul>
+<li>Group Leader - Athukorala W.A.A.D.D.T. (https://github.com/)</li>
+<li>Member2 - Rathnayake R.M.P.M. (https://github.com/)</li>
+<li>Member3 - Karunanayake K.M.S.S. (https://github.com/)</li>
+<li>Member4 - Rathnasinghe R.H.S (https://github.com/)</li>
+  </ul>
