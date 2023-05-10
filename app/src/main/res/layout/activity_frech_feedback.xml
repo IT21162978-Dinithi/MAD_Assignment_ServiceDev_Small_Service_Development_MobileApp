@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebfaeb"
+    tools:context=".activities.FeedbackDisplay">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="363dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bar"
+                    android:backgroundTint="@color/green2"
+                    android:padding="5dp"
+                    android:text="Feedback List"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/dark_green"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/feedAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp"
+                    android:layout_marginEnd="90dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/left_background"
+                    android:backgroundTint="#202C04"
+                    android:text="Add Feedback"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvLoadingData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Loading Data....."
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+
+
+                android:id="@+id/rvfeed"
+                android:layout_width="match_parent"
+                android:layout_height="656dp"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="10.0sp"
+                android:scrollbars="vertical"
+                tools:listitem="@layout/list_feedback">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

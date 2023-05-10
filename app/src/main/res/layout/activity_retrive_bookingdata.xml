@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    tools:context=".activities.retriveBookingdata">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="336dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bar"
+        android:padding="@dimen/titlePadding"
+        android:text="Service Data"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#030903"
+        android:textSize="@dimen/titleSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView3" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="411dp"
+        android:layout_height="165dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/white_logpanel"
+            android:orientation="vertical"
+            android:paddingRight="5dp"
+            tools:ignore="MissingConstraints">
+
+
+            <LinearLayout
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/bookhrs"
+                    android:layout_width="135dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:text="Service Title"
+                    android:textAllCaps="false"
+                    android:textColor="#030903"
+                    android:textSize="@dimen/Bdata"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rtitle"
+                    android:layout_width="170dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="paimt"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="334dp"
+                android:layout_height="76dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="135dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:text="Service Provider Name"
+                    android:textColor="#030903"
+                    android:textSize="@dimen/Bdata"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rname"
+                    android:layout_width="167dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="sahan"
+                    android:inputType="date" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="295dp"
+                android:layout_height="77dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:padding="7dp">
+
+                <Button
+                    android:id="@+id/btncan0"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_back"
+                    android:text="cancel"
+                    android:textColor="#FEFEFE" />
+
+                <Button
+                    android:id="@+id/btnadd0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_back"
+                    android:text="add"
+                    android:textColor="#FEFEFE" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

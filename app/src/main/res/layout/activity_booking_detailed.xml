@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    android:orientation="vertical"
+    tools:context=".activities.BookingDetailedActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="216dp"
+                android:background="@drawable/topborder1">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="335dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="78dp"
+                    android:layout_marginEnd="78dp"
+                    android:layout_marginBottom="78dp"
+                    android:background="@drawable/bar"
+                    android:padding="@dimen/titlePadding"
+                    android:text="Booking"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/dark_green"
+                    android:textSize="@dimen/titleSize"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/topborder2"
+                android:fontFamily="sans-serif-condensed-light"
+                android:padding="15dp"
+                android:text="@string/CbookingData"
+                android:textColor="#030903"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_logpanel"
+                android:orientation="vertical"
+                android:paddingRight="5dp"
+                tools:ignore="MissingConstraints">
+
+
+
+                <LinearLayout
+                    android:layout_width="333dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/bookid"
+                        android:layout_width="135dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:text="@string/bookid1"
+                        android:textAllCaps="false"
+                        android:textColor="#030903"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rBId"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="333dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/bookhrs"
+                        android:layout_width="135dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:text="@string/Bhrs"
+                        android:textAllCaps="false"
+                        android:textColor="#030903"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rBhours"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="333dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="135dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:text="@string/Bdate"
+                        android:textColor="#030903"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rBDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="333dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/addr"
+                        android:layout_width="135dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:text="@string/Baddr"
+                        android:textColor="#030903"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rBaddr"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="333dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/phn"
+                        android:layout_width="135dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:text="@string/Bphn"
+                        android:textColor="#030903"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/rBphone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="333dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/bookserNmae"
+                        android:layout_width="135dp"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:text="@string/BbookservName"
+                        android:textColor="#030903"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/addBname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_back"
+                    android:backgroundTint="#251107"
+                    android:text="@string/editBtn"
+                    android:textColor="#FEFEFE"
+                    android:textSize="@dimen/btnSize" />
+
+                <Button
+                    android:id="@+id/btncan1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_back"
+                    android:backgroundTint="#470707"
+                    android:text="@string/deletebtn"
+                    android:textColor="#FEFEFE"
+                    android:textSize="@dimen/btnSize" />
+
+                <Button
+                    android:id="@+id/btnpay001"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_back"
+                    android:backgroundTint="#384514"
+                    android:text="Pay Now"
+                    android:textColor="#FEFEFE"
+                    android:textSize="@dimen/btnSize" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
